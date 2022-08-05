@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.security.SecureRandom;
 
 @Service
 public class FireStoreInitialization {
-
     @PostConstruct
     public void initialization() throws IOException {
 
@@ -24,5 +24,7 @@ public class FireStoreInitialization {
 
         FirebaseApp.initializeApp(options);
 
+
     }
+
 }

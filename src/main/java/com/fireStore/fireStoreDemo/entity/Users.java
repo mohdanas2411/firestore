@@ -1,14 +1,17 @@
 package com.fireStore.fireStoreDemo.entity;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Setter
 @Getter
+@ToString
 public class Users {
     long userId;
 
     String userName;
 
     String userAddress;
+
 }
